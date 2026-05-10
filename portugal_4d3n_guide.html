@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>葡萄牙四天三晚旅行攻略</title>
+  <style>
+    :root {
+      --ink: #17212b;
+      --muted: #64707d;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --line: #ddd7cc;
+      --blue: #176c8f;
+      --green: #2f6f5e;
+      --red: #b5483b;
+      --gold: #c28b2c;
+      --shadow: 0 20px 50px rgba(23, 33, 43, .14);
+      --radius: 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .hero {
+      min-height: 86vh;
+      position: relative;
+      display: grid;
+      align-items: end;
+      color: #fff;
+      overflow: hidden;
+      background: #13202a;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(180deg, rgba(14, 25, 34, .28) 0%, rgba(14, 25, 34, .68) 62%, rgba(14, 25, 34, .9) 100%),
+        url("https://commons.wikimedia.org/wiki/Special:FilePath/Ponte%20de%20Dom%20Lu%C3%ADs%20I%20and%20Ribeira%2C%20Porto%20%2854795128175%29.jpg?width=1800") center/cover no-repeat;
+      transform: scale(1.03);
+    }
+
+    .hero-inner {
+      position: relative;
+      width: min(1180px, calc(100% - 40px));
+      margin: 0 auto;
+      padding: 92px 0 56px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0;
+      color: #f6d894;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 36px;
+      height: 2px;
+      background: currentColor;
+    }
+
+    h1 {
+      max-width: 920px;
+      margin: 0;
+      font-size: clamp(44px, 8vw, 104px);
+      line-height: .94;
+      letter-spacing: 0;
+    }
+
+    .hero-copy {
+      max-width: 700px;
+      margin: 24px 0 0;
+      color: rgba(255, 255, 255, .88);
+      font-size: clamp(17px, 2vw, 22px);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 42px;
+      background: rgba(255, 255, 255, .22);
+      border: 1px solid rgba(255, 255, 255, .28);
+    }
+
+    .hero-stat {
+      padding: 18px;
+      background: rgba(8, 20, 28, .42);
+      backdrop-filter: blur(10px);
+    }
+
+    .hero-stat b {
+      display: block;
+      font-size: 18px;
+    }
+
+    .hero-stat span {
+      display: block;
+      margin-top: 4px;
+      color: rgba(255, 255, 255, .72);
+      font-size: 13px;
+    }
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: rgba(251, 250, 247, .94);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(12px);
+    }
+
+    .nav-inner {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+      display: flex;
+      gap: 8px;
+      overflow-x: auto;
+      padding: 10px 0;
+    }
+
+    .nav a {
+      flex: 0 0 auto;
+      padding: 9px 13px;
+      border: 1px solid transparent;
+      border-radius: 999px;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    .nav a:hover {
+      color: var(--ink);
+      border-color: var(--line);
+      background: #fff;
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .wrap {
+      width: min(1180px, calc(100% - 32px));
+      margin: 0 auto;
+    }
+
+    .section-head {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(280px, .7fr);
+      gap: 36px;
+      align-items: end;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: clamp(30px, 4vw, 52px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    .lead {
+      margin: 0;
+      color: var(--muted);
+      font-size: 17px;
+    }
+
+    .route-band {
+      background: #17212b;
+      color: #fff;
+    }
+
+    .route-band .lead,
+    .route-band .muted,
+    .route-band .timeline p {
+      color: rgba(255, 255, 255, .72);
+    }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1.2fr .8fr;
+      gap: 18px;
+    }
+
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 12px 32px rgba(23, 33, 43, .06);
+      overflow: hidden;
+    }
+
+    .route-band .panel {
+      background: rgba(255, 255, 255, .08);
+      border-color: rgba(255, 255, 255, .18);
+      box-shadow: none;
+    }
+
+    .map-card {
+      padding: 26px;
+      min-height: 330px;
+      display: grid;
+      align-content: center;
+      gap: 18px;
+      background:
+        linear-gradient(135deg, rgba(23, 108, 143, .32), rgba(47, 111, 94, .24)),
+        #1f2d37;
+    }
+
+    .route-line {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      align-items: center;
+      gap: 12px;
+    }
+
+    .route-stop {
+      min-height: 118px;
+      padding: 18px;
+      border: 1px solid rgba(255, 255, 255, .25);
+      border-radius: var(--radius);
+      background: rgba(255, 255, 255, .1);
+    }
+
+    .route-stop small {
+      display: block;
+      color: #f6d894;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    .route-stop b {
+      display: block;
+      font-size: 20px;
+    }
+
+    .route-stop span {
+      display: block;
+      margin-top: 5px;
+      color: rgba(255, 255, 255, .72);
+      font-size: 13px;
+    }
+
+    .facts {
+      display: grid;
+      gap: 1px;
+      background: rgba(255, 255, 255, .16);
+    }
+
+    .fact {
+      padding: 20px 22px;
+      background: rgba(255, 255, 255, .07);
+    }
+
+    .fact b {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .fact span {
+      color: rgba(255, 255, 255, .72);
+      font-size: 14px;
+    }
+
+    .days {
+      display: grid;
+      gap: 20px;
+    }
+
+    .day {
+      display: grid;
+      grid-template-columns: 210px 1fr;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 14px 36px rgba(23, 33, 43, .08);
+    }
+
+    .day-side {
+      padding: 24px;
+      color: #fff;
+      background: var(--blue);
+    }
+
+    .day:nth-child(2) .day-side {
+      background: var(--green);
+    }
+
+    .day:nth-child(3) .day-side {
+      background: var(--red);
+    }
+
+    .day:nth-child(4) .day-side {
+      background: #4b5872;
+    }
+
+    .day-side strong {
+      display: block;
+      font-size: 34px;
+      line-height: 1;
+    }
+
+    .day-side span {
+      display: block;
+      margin-top: 10px;
+      color: rgba(255, 255, 255, .78);
+      font-weight: 700;
+    }
+
+    .day-main {
+      padding: 24px;
+    }
+
+    .day-main h3 {
+      margin: 0 0 14px;
+      font-size: 25px;
+      line-height: 1.2;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 12px;
+    }
+
+    .slot {
+      display: grid;
+      grid-template-columns: 90px 1fr;
+      gap: 14px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid #eee6d9;
+    }
+
+    .slot:last-child {
+      padding-bottom: 0;
+      border-bottom: 0;
+    }
+
+    .time {
+      color: var(--red);
+      font-weight: 800;
+      font-size: 14px;
+    }
+
+    .slot b {
+      display: block;
+      margin-bottom: 2px;
+    }
+
+    .slot p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: 0 14px 36px rgba(23, 33, 43, .08);
+    }
+
+    .photo {
+      aspect-ratio: 4 / 3;
+      background: #d4d8d6;
+    }
+
+    .card-body {
+      padding: 18px;
+    }
+
+    .tag {
+      display: inline-flex;
+      margin-bottom: 10px;
+      padding: 4px 9px;
+      border-radius: 999px;
+      background: #e8f1ef;
+      color: var(--green);
+      font-size: 12px;
+      font-weight: 800;
+    }
+
+    .tag.warn {
+      background: #f8e5df;
+      color: var(--red);
+    }
+
+    .tag.blue {
+      background: #e5f0f5;
+      color: var(--blue);
+    }
+
+    .card h3 {
+      margin: 0 0 8px;
+      font-size: 22px;
+      line-height: 1.2;
+    }
+
+    .card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .card .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .meta span {
+      padding: 6px 8px;
+      border: 1px solid #eadfce;
+      border-radius: 999px;
+      background: #fffaf1;
+    }
+
+    .food-list {
+      display: grid;
+      gap: 14px;
+    }
+
+    .food {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 18px;
+      padding: 18px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      box-shadow: 0 10px 26px rgba(23, 33, 43, .06);
+    }
+
+    .food h3 {
+      margin: 0 0 7px;
+      font-size: 21px;
+    }
+
+    .food p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .food strong {
+      color: var(--red);
+      white-space: nowrap;
+    }
+
+    .note {
+      padding: 18px 20px;
+      border-left: 5px solid var(--gold);
+      background: #fff6df;
+      color: #5f4720;
+      border-radius: 0 var(--radius) var(--radius) 0;
+    }
+
+    .note p {
+      margin: 0;
+    }
+
+    .checklist {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .checklist li {
+      padding: 14px 16px;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+    }
+
+    .source-list {
+      columns: 2;
+      column-gap: 30px;
+      margin: 0;
+      padding-left: 18px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .source-list li {
+      break-inside: avoid;
+      margin-bottom: 9px;
+    }
+
+    footer {
+      padding: 34px 0 46px;
+      background: #17212b;
+      color: rgba(255, 255, 255, .74);
+      font-size: 13px;
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        min-height: 82vh;
+      }
+
+      .hero-grid,
+      .summary-grid,
+      .section-head,
+      .grid-3,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .route-line {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .day {
+        grid-template-columns: 1fr;
+      }
+
+      .day-side {
+        display: flex;
+        align-items: end;
+        justify-content: space-between;
+        gap: 18px;
+      }
+
+      .source-list {
+        columns: 1;
+      }
+    }
+
+    @media (max-width: 560px) {
+      section {
+        padding: 52px 0;
+      }
+
+      .hero-inner {
+        width: min(100% - 28px, 1180px);
+        padding-bottom: 36px;
+      }
+
+      .hero-grid,
+      .route-line {
+        grid-template-columns: 1fr;
+      }
+
+      .slot {
+        grid-template-columns: 1fr;
+        gap: 4px;
+      }
+
+      .food {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="eyebrow">Portugal 4 Days 3 Nights</div>
+      <h1>葡萄牙四天三晚精华攻略</h1>
+      <p class="hero-copy">一条偏高效的初访路线：里斯本住两晚，辛特拉童话山城一日，最后坐火车去波尔图住一晚。节奏紧凑但不赶场，适合想一次拿下葡萄牙经典城市、海边修道院、彩色宫殿和杜罗河夜景的人。</p>
+      <div class="hero-grid" aria-label="行程摘要">
+        <div class="hero-stat"><b>3 座城市</b><span>Lisboa / Sintra / Porto</span></div>
+        <div class="hero-stat"><b>2 次换城</b><span>机场进里斯本，波尔图出或返回里斯本</span></div>
+        <div class="hero-stat"><b>6 家餐厅</b><span>海鲜、蛋挞、法朵晚餐、葡式三明治</span></div>
+        <div class="hero-stat"><b>2026-05 更新</b><span>已核对部分官网开放信息</span></div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="nav" aria-label="页面导航">
+    <div class="nav-inner">
+      <a href="#route">路线总览</a>
+      <a href="#daily">每日行程</a>
+      <a href="#sights">景点图片</a>
+      <a href="#food">具体美食店</a>
+      <a href="#tips">交通与预订</a>
+      <a href="#sources">来源</a>
+    </div>
+  </nav>
+
+  <section id="route" class="route-band">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>路线总览</h2>
+        <p class="lead">建议进出方式：里斯本进，波尔图出。如果机票必须里斯本往返，第 4 天可坐晚间火车回里斯本，第二天从里斯本飞。</p>
+      </div>
+      <div class="summary-grid">
+        <div class="panel map-card">
+          <div class="route-line">
+            <div class="route-stop"><small>Day 1</small><b>里斯本老城</b><span>阿尔法玛、城堡、观景台、法朵</span></div>
+            <div class="route-stop"><small>Day 2</small><b>贝伦与河岸</b><span>热罗尼莫斯修道院、贝伦塔外观、LX Factory</span></div>
+            <div class="route-stop"><small>Day 3</small><b>辛特拉</b><span>佩纳宫、雷加莱拉庄园、镇中心甜点</span></div>
+            <div class="route-stop"><small>Day 4</small><b>波尔图</b><span>圣本笃站、莱罗书店、里贝拉、杜罗河</span></div>
+          </div>
+        </div>
+        <div class="panel facts">
+          <div class="fact"><b>住宿建议</b><span>前 2 晚住里斯本 Baixa / Chiado / Avenida，最后 1 晚住波尔图 São Bento / Ribeira 附近。</span></div>
+          <div class="fact"><b>城际交通</b><span>里斯本到波尔图优先 CP Alfa Pendular 或 Intercidades，常见耗时约 2 小时 50 分到 3 小时多。</span></div>
+          <div class="fact"><b>行李策略</b><span>第 3 天晚坐火车到波尔图会比较顺，辛特拉当天把大件行李寄存在里斯本酒店或车站。</span></div>
+          <div class="fact"><b>贝伦塔提醒</b><span>官方显示贝伦塔因修缮关闭，安排为外观拍照点即可。</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="daily">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>每日行程</h2>
+        <p class="lead">每天都留了餐厅和拍照节点。时间是旅行友好版，不是赶 KPI 版；遇到排队就砍掉次要点，保证晚餐和日落。</p>
+      </div>
+
+      <div class="days">
+        <article class="day">
+          <div class="day-side">
+            <strong>Day 1</strong>
+            <span>抵达里斯本，老城暖身</span>
+          </div>
+          <div class="day-main">
+            <h3>阿尔法玛、圣乔治城堡与法朵晚餐</h3>
+            <div class="timeline">
+              <div class="slot"><div class="time">上午</div><div><b>抵达里斯本，入住 Baixa / Chiado</b><p>从机场打车或地铁进城。第一天不要排重票景点，把体力留给老城坡路。</p></div></div>
+              <div class="slot"><div class="time">12:30</div><div><b>午餐：Time Out Market Lisboa</b><p>选择多，适合刚落地。想吃海鲜可看 Marisqueira Azul，想轻松一点就随缘点小份分食。</p></div></div>
+              <div class="slot"><div class="time">14:30</div><div><b>阿尔法玛步行</b><p>从 Sé 大教堂一路上坡到 Miradouro de Santa Luzia、Portas do Sol，拍电车、红屋顶和特茹河。</p></div></div>
+              <div class="slot"><div class="time">16:30</div><div><b>圣乔治城堡外圈与观景台</b><p>如果体力好就入内；如果排队长，直接用周边观景台替代，黄昏光线更值。</p></div></div>
+              <div class="slot"><div class="time">20:00</div><div><b>晚餐：Parreirinha de Alfama 或 Fama de Alfama</b><p>选一家法朵餐厅预订，点烤鳕鱼、葡式猪肉或章鱼。法朵表演时保持安静，是当地礼貌。</p></div></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-side">
+            <strong>Day 2</strong>
+            <span>贝伦区与海鲜晚餐</span>
+          </div>
+          <div class="day-main">
+            <h3>热罗尼莫斯修道院、贝伦蛋挞、河岸散步</h3>
+            <div class="timeline">
+              <div class="slot"><div class="time">09:30</div><div><b>热罗尼莫斯修道院</b><p>修道院回廊建议提前买票。官方开放信息显示回廊周二至周日 9:30-17:30，周一关闭。</p></div></div>
+              <div class="slot"><div class="time">11:30</div><div><b>Pastéis de Belém</b><p>到原店吃热蛋挞，撒肉桂粉和糖粉。堂食队伍有时比外带更快，看现场队列决定。</p></div></div>
+              <div class="slot"><div class="time">12:30</div><div><b>贝伦塔外观、发现者纪念碑、河岸</b><p>贝伦塔官方显示修缮关闭，外观拍照即可。沿河走到 MAAT 一带，下午光线好。</p></div></div>
+              <div class="slot"><div class="time">15:30</div><div><b>LX Factory 或 Chiado 购物</b><p>喜欢独立店、书店和街头感就去 LX Factory；想轻松咖啡购物就回 Chiado。</p></div></div>
+              <div class="slot"><div class="time">19:30</div><div><b>晚餐：Cervejaria Ramiro</b><p>主攻蒜香虾、蛤蜊 Bulhão Pato、虎虾或螃蟹，最后用 Prego 牛排三明治收尾。</p></div></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-side">
+            <strong>Day 3</strong>
+            <span>辛特拉童话一日</span>
+          </div>
+          <div class="day-main">
+            <h3>佩纳宫、雷加莱拉庄园，晚间去波尔图</h3>
+            <div class="timeline">
+              <div class="slot"><div class="time">08:00</div><div><b>里斯本 Rossio 站坐火车去 Sintra</b><p>车程通常约 40 分钟。佩纳宫尽量预约上午时段，进园后到宫殿还要走一段。</p></div></div>
+              <div class="slot"><div class="time">09:30</div><div><b>佩纳宫 Palácio Nacional da Pena</b><p>先拍外立面和露台，再进室内。人多时不要在每个窗边硬等，抓大场景更舒服。</p></div></div>
+              <div class="slot"><div class="time">13:00</div><div><b>午餐：Romaria de Baco</b><p>在辛特拉老城中心，适合点 tapas、鳕鱼、鸭胸、葡萄牙酒。建议提前订位。</p></div></div>
+              <div class="slot"><div class="time">15:00</div><div><b>雷加莱拉庄园 Quinta da Regaleira</b><p>重点看 Initiation Well、洞穴和花园路线。这里比宫殿更像探险，鞋一定要舒服。</p></div></div>
+              <div class="slot"><div class="time">17:30</div><div><b>Casa Piriquita 甜点</b><p>吃 Travesseiro 和 Queijada。之后回里斯本取行李，坐晚间火车去波尔图。</p></div></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="day">
+          <div class="day-side">
+            <strong>Day 4</strong>
+            <span>波尔图精华与返程</span>
+          </div>
+          <div class="day-main">
+            <h3>圣本笃车站、莱罗书店、里贝拉与杜罗河</h3>
+            <div class="timeline">
+              <div class="slot"><div class="time">09:00</div><div><b>圣本笃车站 São Bento</b><p>先看蓝白瓷砖大厅，再步行到 Clérigos、Carmo 教堂一带。</p></div></div>
+              <div class="slot"><div class="time">10:30</div><div><b>莱罗书店 Livraria Lello</b><p>热门时段很挤，建议预约早场。想拍红楼梯，开门后第一批进入体验最好。</p></div></div>
+              <div class="slot"><div class="time">12:30</div><div><b>午餐：Casa Guedes 或 Café Santiago</b><p>Casa Guedes 吃烤猪腿三明治，Café Santiago 吃 Francesinha。两家风格都很波尔图。</p></div></div>
+              <div class="slot"><div class="time">15:00</div><div><b>里贝拉与路易一世大桥</b><p>从 Ribeira 走过桥到 Gaia，回望彩色河岸。天气好可加一段杜罗河 50 分钟船游。</p></div></div>
+              <div class="slot"><div class="time">18:00</div><div><b>波特酒窖或 Mercado do Bolhão</b><p>时间够就 Gaia 酒窖品酒；如果更想逛吃，Bolhão 市场周一至周五 8:00-19:00，周六到 18:00，周日休。</p></div></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="sights">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>景点图片与看点</h2>
+        <p class="lead">以下图片使用 Wikimedia Commons 可访问文件链接。真实出行前，门票和开放时间仍建议按官网二次确认。</p>
+      </div>
+
+      <div class="grid-3">
+        <article class="card">
+          <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Tram%20through%20Alfama%20%2845633482212%29.jpg?width=1200" alt="里斯本阿尔法玛街区电车"></div>
+          <div class="card-body">
+            <span class="tag blue">Lisbon</span>
+            <h3>阿尔法玛 Alfama</h3>
+            <p>里斯本最传统的老城街区，适合慢走、爬坡、找观景台，也适合安排法朵晚餐。</p>
+            <div class="meta"><span>建议 2-3 小时</span><span>傍晚好拍</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Cloister%20of%20the%20Jer%C3%B3nimos%20Monastery%20in%20Bel%C3%A9m%2C%20Lisbon%2C%2020250604%201320%209230.jpg?width=1200" alt="热罗尼莫斯修道院回廊"></div>
+          <div class="card-body">
+            <span class="tag blue">Belém</span>
+            <h3>热罗尼莫斯修道院</h3>
+            <p>曼努埃尔式建筑代表作，回廊细节非常密。适合上午第一站，避开团队高峰。</p>
+            <div class="meta"><span>周一闭馆</span><span>建议预订</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Belem%20Tower%2C%20Lisbon%20%288038548360%29.jpg?width=1200" alt="贝伦塔外观"></div>
+          <div class="card-body">
+            <span class="tag warn">修缮中</span>
+            <h3>贝伦塔 Torre de Belém</h3>
+            <p>里斯本标志性河岸塔楼。官方显示因修缮关闭，当前按外观拍照点处理。</p>
+            <div class="meta"><span>外观 20-30 分钟</span><span>河岸散步</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Pena%20Palace%20Sintra.jpg?width=1200" alt="辛特拉佩纳宫"></div>
+          <div class="card-body">
+            <span class="tag">Sintra</span>
+            <h3>佩纳宫 Palácio da Pena</h3>
+            <p>葡萄牙浪漫主义宫殿代表，彩色外墙和山顶露台是辛特拉最经典画面。</p>
+            <div class="meta"><span>预约早场</span><span>建议 2.5-3 小时</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Initiation%20Well%2C%20Quinta%20da%20Regaleira%2C%20Light%20at%20the%20End%20of%20the%20Tunnel%20%2850657854571%29.jpg?width=1200" alt="雷加莱拉庄园 Initiation Well"></div>
+          <div class="card-body">
+            <span class="tag">Sintra</span>
+            <h3>雷加莱拉庄园</h3>
+            <p>庄园、洞穴、螺旋井组合起来很有戏剧感。路线像迷宫，别把时间压太死。</p>
+            <div class="meta"><span>建议 2 小时</span><span>穿防滑鞋</span></div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="photo"><img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dom%20Luis%20I%20bridge%20from%20Cais%20da%20Ribeira.jpg?width=1200" alt="波尔图里贝拉与路易一世大桥"></div>
+          <div class="card-body">
+            <span class="tag blue">Porto</span>
+            <h3>里贝拉与路易一世大桥</h3>
+            <p>波尔图最上镜的河岸区域。傍晚从 Gaia 侧回望 Ribeira，城市颜色会非常漂亮。</p>
+            <div class="meta"><span>日落最佳</span><span>可加船游</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="food">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>美食，具体到店</h2>
+        <p class="lead">这些店分布在行程动线上，尽量减少绕路。热门餐厅请提前订位，尤其 Ramiro、法朵餐厅和辛特拉午餐。</p>
+      </div>
+
+      <div class="food-list">
+        <article class="food">
+          <div>
+            <h3>Time Out Market Lisboa</h3>
+            <p>地址：Mercado da Ribeira, Avenida 24 de Julho, Lisbon。适合第一餐，不用纠结单一餐厅；官方页面显示每日营业，常规为 10:00 至午夜。</p>
+          </div>
+          <strong>Day 1 午餐</strong>
+        </article>
+
+        <article class="food">
+          <div>
+            <h3>Parreirinha de Alfama / Fama de Alfama</h3>
+            <p>阿尔法玛法朵晚餐。Parreirinha 更老派，Fama de Alfama 更轻松。点传统葡萄牙菜，重点是体验现场 Fado。</p>
+          </div>
+          <strong>Day 1 晚餐</strong>
+        </article>
+
+        <article class="food">
+          <div>
+            <h3>Pastéis de Belém</h3>
+            <p>地址：Rua de Belém 84-92。吃原版 Pastéis de Belém，搭配浓缩咖啡。官方旅游页面记录其 1837 年开始制作。</p>
+          </div>
+          <strong>Day 2 甜点</strong>
+        </article>
+
+        <article class="food">
+          <div>
+            <h3>Cervejaria Ramiro</h3>
+            <p>地址：Avenida Almirante Reis 1-H。官网显示餐厅周二至周六 12:00-00:00，周日 12:00-23:00。推荐蒜香虾、蛤蜊、虎虾、蟹和收尾 Prego。</p>
+          </div>
+          <strong>Day 2 晚餐</strong>
+        </article>
+
+        <article class="food">
+          <div>
+            <h3>Romaria de Baco</h3>
+            <p>地址：Rua Gil Vicente 2, Sintra。官网显示周一至周日 11:00-00:00，可电话或在线预订。辛特拉老城午餐很顺路。</p>
+          </div>
+          <strong>Day 3 午餐</strong>
+        </article>
+
+        <article class="food">
+          <div>
+            <h3>Casa Piriquita</h3>
+            <p>辛特拉老字号甜点店，吃 Travesseiro 和 Queijada。适合从雷加莱拉庄园回镇中心后补糖。</p>
+          </div>
+          <strong>Day 3 下午茶</strong>
+        </article>
+
+        <article class="food">
+          <div>
+            <h3>Café Santiago</h3>
+            <p>地址：Rua de Passos Manuel 226。官方介绍其 Francesinha Santiago 是招牌，适合想吃波尔图重口味经典的人。</p>
+          </div>
+          <strong>Day 4 午餐 A</strong>
+        </article>
+
+        <article class="food">
+          <div>
+            <h3>Casa Guedes</h3>
+            <p>招牌是 pernil 烤猪腿三明治，适合更快、更街头的一餐。可选传统店或其他分店，看当天位置。</p>
+          </div>
+          <strong>Day 4 午餐 B</strong>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="tips">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>交通、预订与预算</h2>
+        <p class="lead">四天三晚最容易翻车的是辛特拉时间和里斯本到波尔图火车。把这两个先订好，其他都比较从容。</p>
+      </div>
+      <div class="grid-2">
+        <div class="note">
+          <p><b>推荐订票顺序：</b>先订里斯本到波尔图火车，再订佩纳宫时段票，然后订 Ramiro / 法朵 / Romaria de Baco。热罗尼莫斯修道院旺季也建议提前买。</p>
+        </div>
+        <div class="note">
+          <p><b>行李策略：</b>第 3 天不要拖箱上辛特拉山。把行李寄存在里斯本酒店、Rossio 附近寄存点或车站，再回城取行李去 Porto Campanhã / São Bento。</p>
+        </div>
+      </div>
+
+      <div style="height: 18px"></div>
+
+      <ul class="checklist">
+        <li><b>预算参考：</b>不含国际机票，中等舒适玩法约 450-800 欧 / 人。住宿、餐厅和火车提前程度会显著影响总价。</li>
+        <li><b>市内交通：</b>里斯本可用地铁、电车、Bolt/Uber；辛特拉上山用 434 巴士、出租或本地接驳，不建议自驾进山找车位。</li>
+        <li><b>穿衣装备：</b>里斯本和波尔图石子路多，辛特拉坡路和湿滑台阶多，鞋比衣服重要。夏天也带薄外套，海风会突然认真起来。</li>
+        <li><b>取舍建议：</b>如果不想赶波尔图，把第 4 天改成卡斯凯什海边或里斯本博物馆日；但第一次来葡萄牙，我会保留波尔图。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="sources">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>资料来源与图片署名</h2>
+        <p class="lead">开放时间和营业信息可能会临时变化，出发前请以官网和预订平台最终显示为准。</p>
+      </div>
+      <ol class="source-list">
+        <li><a href="https://www.museusemonumentos.pt/en/museus-e-monumentos/mosteiro-dos-jeronimos-e-capela-de-sao-jeronimo">Museus e Monumentos de Portugal - Jerónimos Monastery</a></li>
+        <li><a href="https://www.museusemonumentos.pt/en/museus-e-monumentos/torre-de-belem">Museus e Monumentos de Portugal - Belém Tower</a></li>
+        <li><a href="https://www.visitportugal.com/en/content/palacio-nacional-da-pena">Visit Portugal - Palácio Nacional da Pena</a></li>
+        <li><a href="https://www.regaleira.pt/">Quinta da Regaleira 官方网站</a></li>
+        <li><a href="https://www1.cp.pt/info/en/web/cp/comboios">CP - Alfa Pendular</a></li>
+        <li><a href="https://www.visitlisboa.com/en/places/alfama">Visit Lisboa - Alfama</a></li>
+        <li><a href="https://www.visitlisboa.com/en/places/pasteis-de-belem">Visit Lisboa - Pastéis de Belém</a></li>
+        <li><a href="https://www.timeout.com/time-out-market-lisboa">Time Out Market Lisboa</a></li>
+        <li><a href="https://www.cervejariaramiro.com/">Cervejaria Ramiro 官方网站</a></li>
+        <li><a href="https://www.romariadebaco.pt/">Romaria de Baco 官方网站</a></li>
+        <li><a href="https://cafesantiago.pt/en/cafe-santiago-en/">Café Santiago 官方网站</a></li>
+        <li><a href="https://casaguedes.pt/menu/">Casa Guedes 官方菜单</a></li>
+        <li>图片：Wikimedia Commons 文件，包括 Tram through Alfama, Cloister of the Jerónimos Monastery, Belem Tower, Pena Palace Sintra, Initiation Well, Dom Luis I bridge from Cais da Ribeira, Ponte de Dom Luís I and Ribeira。各文件页面保留原作者与许可信息。</li>
+      </ol>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      葡萄牙四天三晚旅行攻略，生成日期：2026-05-10。建议出发前 3-7 天复查景点维护、餐厅假期和火车班次。
+    </div>
+  </footer>
+</body>
+</html>
