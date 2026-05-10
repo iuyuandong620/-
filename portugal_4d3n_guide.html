@@ -493,6 +493,26 @@
       font-size: 14px;
     }
 
+    .food-meta {
+      display: grid;
+      gap: 7px;
+      margin-top: 12px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .food-meta span {
+      display: block;
+      padding: 8px 10px;
+      border: 1px solid #eadfce;
+      border-radius: 8px;
+      background: #fffaf1;
+    }
+
+    .food-meta b {
+      color: var(--ink);
+    }
+
     .food strong {
       color: var(--red);
       white-space: nowrap;
@@ -810,7 +830,7 @@
     <div class="wrap">
       <div class="section-head">
         <h2>美食，具体到店</h2>
-        <p class="lead">这些店分布在行程动线上，尽量减少绕路。热门餐厅请提前订位，尤其 Ramiro、法朵餐厅和辛特拉午餐。</p>
+        <p class="lead">这些店分布在行程动线上，尽量减少绕路。Google Maps 评分是 2026 年 5 月查询到的约数，出发前以地图最新显示为准。热门餐厅请提前订位，尤其 Ramiro、法朵餐厅和辛特拉午餐。</p>
       </div>
 
       <div class="food-list">
@@ -818,6 +838,10 @@
           <div>
             <h3>Time Out Market Lisboa</h3>
             <p>地址：Mercado da Ribeira, Avenida 24 de Julho, Lisbon。适合第一餐，不用纠结单一餐厅；官方页面显示每日营业，常规为 10:00 至午夜。</p>
+            <div class="food-meta">
+              <span><b>Google 评分：</b>约 4.4/5，评价量很大，适合“多人各点各的”。</span>
+              <span><b>热门菜品：</b>海鲜档的生蚝和虾、葡式蛋挞、名厨档口小份主菜，建议分食多尝几家。</span>
+            </div>
           </div>
           <strong>Day 1 午餐</strong>
         </article>
@@ -826,6 +850,10 @@
           <div>
             <h3>Parreirinha de Alfama / Fama de Alfama</h3>
             <p>阿尔法玛法朵晚餐。Parreirinha 更老派，Fama de Alfama 更轻松。点传统葡萄牙菜，重点是体验现场 Fado。</p>
+            <div class="food-meta">
+              <span><b>Google 评分：</b>Parreirinha 约 4.5/5；Fama de Alfama 约 4.4/5。</span>
+              <span><b>热门菜品：</b>法朵套餐、烤鳕鱼、章鱼、伊比利亚猪肉、奶酪或香肠拼盘。演唱时保持安静。</span>
+            </div>
           </div>
           <strong>Day 1 晚餐</strong>
         </article>
@@ -834,6 +862,10 @@
           <div>
             <h3>Pastéis de Belém</h3>
             <p>地址：Rua de Belém 84-92。吃原版 Pastéis de Belém，搭配浓缩咖啡。官方旅游页面记录其 1837 年开始制作。</p>
+            <div class="food-meta">
+              <span><b>Google 评分：</b>约 4.6/5，评价接近十万级。</span>
+              <span><b>热门菜品：</b>热 Pastel de Belém 撒肉桂粉和糖粉，配 bica 浓缩咖啡；外带队伍常比看起来快。</span>
+            </div>
           </div>
           <strong>Day 2 甜点</strong>
         </article>
@@ -842,6 +874,10 @@
           <div>
             <h3>Cervejaria Ramiro</h3>
             <p>地址：Avenida Almirante Reis 1-H。官网显示餐厅周二至周六 12:00-00:00，周日 12:00-23:00。推荐蒜香虾、蛤蜊、虎虾、蟹和收尾 Prego。</p>
+            <div class="food-meta">
+              <span><b>Google 评分：</b>约 4.4/5，评价约两万条。</span>
+              <span><b>热门菜品：</b>蒜香虾、Bulhão Pato 蛤蜊、虎虾、蟹、生蚝，最后用 Prego 牛排三明治收尾。</span>
+            </div>
           </div>
           <strong>Day 2 晚餐</strong>
         </article>
@@ -850,6 +886,10 @@
           <div>
             <h3>Romaria de Baco</h3>
             <p>地址：Rua Gil Vicente 2, Sintra。官网显示周一至周日 11:00-00:00，可电话或在线预订。辛特拉老城午餐很顺路。</p>
+            <div class="food-meta">
+              <span><b>Google 评分：</b>约 4.3/5；TheFork 预订评分约 9.6/10。</span>
+              <span><b>热门菜品：</b>蒜香虾、Bacalhau à Brás、烤章鱼、炸鱿鱼圈、酿蘑菇，适合配一杯葡萄牙酒。</span>
+            </div>
           </div>
           <strong>Day 3 午餐</strong>
         </article>
@@ -858,6 +898,10 @@
           <div>
             <h3>Casa Piriquita</h3>
             <p>辛特拉老字号甜点店，吃 Travesseiro 和 Queijada。适合从雷加莱拉庄园回镇中心后补糖。</p>
+            <div class="food-meta">
+              <span><b>Google 评分：</b>约 4.4/5，评价约六千多条。</span>
+              <span><b>热门菜品：</b>Travesseiro de Piriquita、Queijada、Pastel de Nata、浓缩咖啡；甜度高，适合两人分着点。</span>
+            </div>
           </div>
           <strong>Day 3 下午茶</strong>
         </article>
@@ -866,6 +910,10 @@
           <div>
             <h3>Café Santiago</h3>
             <p>地址：Rua de Passos Manuel 226。官方介绍其 Francesinha Santiago 是招牌，适合想吃波尔图重口味经典的人。</p>
+            <div class="food-meta">
+              <span><b>Google 评分：</b>约 4.4/5，评价约一万七千条。</span>
+              <span><b>热门菜品：</b>Francesinha Santiago、Francesinha 配薯条、啤酒；一份很扎实，下午别排太满。</span>
+            </div>
           </div>
           <strong>Day 4 午餐 A</strong>
         </article>
@@ -874,6 +922,10 @@
           <div>
             <h3>Casa Guedes</h3>
             <p>招牌是 pernil 烤猪腿三明治，适合更快、更街头的一餐。可选传统店或其他分店，看当天位置。</p>
+            <div class="food-meta">
+              <span><b>Google 评分：</b>传统店约 4.5/5，评价约一万八千条。</span>
+              <span><b>热门菜品：</b>Pernil 烤猪腿三明治、羊奶酪版本、焦糖洋葱版本、炸丸子或薯片，适合快吃快走。</span>
+            </div>
           </div>
           <strong>Day 4 午餐 B</strong>
         </article>
@@ -926,6 +978,15 @@
         <li><a href="https://www.romariadebaco.pt/">Romaria de Baco 官方网站</a></li>
         <li><a href="https://cafesantiago.pt/en/cafe-santiago-en/">Café Santiago 官方网站</a></li>
         <li><a href="https://casaguedes.pt/menu/">Casa Guedes 官方菜单</a></li>
+        <li><a href="https://wanderlog.com/place/details/50822/time-out-market-lisboa">Wanderlog - Time Out Market Lisboa ratings and notes</a></li>
+        <li><a href="https://www.postcard.inc/places/ramiro-lisbon">Postcard - Cervejaria Ramiro ratings and popular dishes</a></li>
+        <li><a href="https://www.postcard.inc/places/pasteis-de-belem-lisbon">Postcard - Pastéis de Belém ratings and popular dishes</a></li>
+        <li><a href="https://wanderlog.com/place/details/36490/caf%C3%A9-santiago">Wanderlog - Café Santiago ratings and notes</a></li>
+        <li><a href="https://wanderlog.com/place/details/474491">Wanderlog - Romaria de Baco ratings and notes</a></li>
+        <li><a href="https://wanderlog.com/place/details/115882/casa-piriquita">Wanderlog - Casa Piriquita ratings and notes</a></li>
+        <li><a href="https://www.donde-onde-where.com/pt/porto/bonfim/casa-guedes-tradicional">Donde Onde Where - Casa Guedes Tradicional rating</a></li>
+        <li><a href="https://www.visitlisboa.com/en/places/parreirinha-de-alfama">Visit Lisboa - Parreirinha de Alfama</a>；<a href="https://www.visitlisboa.com/en/places/restaurante-fama-de-alfama">Visit Lisboa - Fama de Alfama</a></li>
+        <li><a href="https://wanderlog.com/pt/place/details/1431946/parreirinha-de-alfama">Wanderlog - Parreirinha de Alfama rating</a>；<a href="https://wanderlog.com/place/details/1659823/fama-dalfama">Wanderlog - Fama d'Alfama rating</a></li>
         <li><a href="https://visitmadeira.com/en/what-to-do/culture-passionates/heritage/museums/cr7-museum/">Visit Madeira - CR7 Museum</a></li>
         <li>图片：Wikimedia Commons 文件，包括 Tram through Alfama, Cloister of the Jerónimos Monastery, Belem Tower, Pena Palace Sintra, Initiation Well, Dom Luis I bridge from Cais da Ribeira, Ponte de Dom Luís I and Ribeira。各文件页面保留原作者与许可信息。</li>
       </ol>
